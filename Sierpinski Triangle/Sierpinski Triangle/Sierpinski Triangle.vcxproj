@@ -20,6 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SierpinskiTrian.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SierpinskiTrian.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{ea14f852-f6c5-4269-ae28-6a011beefb51}</ProjectGuid>

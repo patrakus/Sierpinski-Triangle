@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "SierpinskiTrian.h"
 
 int main()
 {
@@ -6,11 +7,7 @@ int main()
 	
 	//shape.setFillColor(sf::Color::Green);
 
-	sf::Vertex line[2];
-	line[0].position = sf::Vector2f(0, 0);
-	line[1].position = sf::Vector2f(300, 300);
-	line[0].color = sf::Color::Red;
-	line[1].color = sf::Color::Red;
+	SierpinskiTrian sierpinskiTriangle(sf::Vector2f(400.f, 200.f), sf::Vector2f(600.f, 400.f), sf::Vector2f(200.f, 400.f), &window);
 
 
 	while (window.isOpen())
@@ -23,7 +20,8 @@ int main()
 		}
 
 		window.clear();
-		window.draw(line, 2, sf::Lines);
+		//window.draw(line, 3, sf::Triangles);
+		sierpinskiTriangle.drawFractal(5);
 		window.display();
 	}
 
